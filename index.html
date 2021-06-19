@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Assignment 15 - Stopwatch</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="stopwatch-div">
+            <h1 class="heading">Stopwatch</h1>
+            <div class="display-div">
+                <p class="screen"><b id="hours"></b>h</p>
+                <p class="screen"><b id="minutes"></b>m</p>
+                <p class="screen"><b id="seconds"></b>s</p>
+                <p class="screen"><b id="millis"></b>ms</p>
+            </div>
+            <div class="buttons-div">
+                <button id="start-button" onclick="start()">Start</button>
+                <button id="stop-button" onclick="stop()">Stop</button>
+                <button id="lap-button" onclick="lap()">Lap</button>
+                <button id="reset-button" onclick="reset()">Reset</button>
+                <button id="lap-clear-button" onclick="clearLap()">Clear Lap</button>
+            </div>
+            <div class="laps-div">
+                <h2>Laps</h2>
+                <ol id="laps-list"></ol>
+                <p>By Muhammad Adil</p>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
